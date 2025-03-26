@@ -1,4 +1,7 @@
 import localFont from "next/font/local";
+import ApolloProviderWrapper from "./components/apollo_provider";
+import Navbar from "./components/navbar";
+import { LoggedProvider } from "./contexts/loggedincontext";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -20,7 +23,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <ApolloProviderWrapper>
+          <LoggedProvider>
+            <Navbar />
+            {children}
+          </LoggedProvider>
+        </ApolloProviderWrapper>
       </body>
     </html>
   );

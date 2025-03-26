@@ -1,0 +1,286 @@
+@font-face {
+  font-family: "Avant Garde";
+  src: url("../fonts/AvantGarde/AVGARDD_2.woff");
+  font-weight: bolder;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue Haas Grotesk";
+  src: url("../fonts/NeueHaasGrotesk/NeueHaasDisplayThin.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kollektief";
+  src: url("../fonts/Kollektief/Kollektif.ttf");
+}
+@font-face {
+  font-family: "Acme";
+  src: url("../fonts/Acme/Acme-Regular-webfont.woff");
+}
+@font-face {
+  font-family: "Manifesto";
+  src: url("../fonts/Manifesto/MANIFESTO.ttf");
+}
+@font-face {
+  font-family: "Eirene Sans";
+  src: url("../fonts/EireneSans/EireneSans-Regular.otf");
+}
+@font-face {
+  font-family: "Futura Light";
+  src: url("../fonts/Futura/Futura Light font.ttf");
+}
+@font-face {
+  font-family: "Futura Condensed Light";
+  src: url("../fonts/Futura/Futura-CondensedLight.otf");
+}
+@font-face {
+  font-family: "Neutral Face";
+  src: url("../fonts/NeutralFace/NeutralFace.otf");
+}
+@font-face {
+  font-family: "Reddit Mono Medium";
+  src: url("../fonts/RedditMono/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: "Reddit Mono Light";
+  src: url("../fonts/RedditMono/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "Trap Sans Light";
+  src: url("../fonts/TrapSans/Trap-Light.otf");
+}
+@font-face {
+  font-family: "Trap Sans Medium";
+  src: url("../fonts/TrapSans/Trap-Medium.otf");
+}
+@font-face {
+  font-family: "Trap Sans Regular";
+  src: url("../fonts/TrapSans/Trap-Regular.otf");
+}
+@font-face {
+  font-family: "Kumbh";
+  src: url("../fonts/Kumbh/KumbhSans-Regular.ttf");
+}
+body {
+  background: white;
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-main {
+  height: 60px;
+  width: 100%;
+  background-color: rgb(194, 194, 194);
+  border: 1px solid gray;
+}
+.nav-main .nav-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+.nav-main .nav-container h4 {
+  font-size: 45px;
+}
+.nav-main .nav-container .logindiv {
+  display: flex;
+  align-items: center;
+}
+.nav-main .nav-container .logindiv p {
+  font-size: 1.5rem;
+  color: black;
+  margin-right: 1.5rem;
+}
+.nav-main .nav-container .logindiv button {
+  width: 150px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.hero-main {
+  height: 100vh;
+}
+.hero-main .hero-container {
+  height: 100%;
+}
+.hero-main .hero-container .hos {
+  width: 100%;
+  height: 100%;
+}
+.hero-main .hero-container .butt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.hero-main .hero-container .butt button {
+  height: 2.5rem;
+  width: 150px;
+  cursor: pointer;
+}
+
+.authcard-main {
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+  gap: 12%;
+}
+.authcard-main > div {
+  height: fit-content;
+  max-width: 400px;
+  padding: 0.5rem;
+}
+.authcard-main .authcard-container {
+  width: 500px;
+  height: 600px;
+}
+.authcard-main .authcard-container .hosi {
+  width: 100%;
+  height: 100%;
+}
+
+.login-main {
+  display: flex;
+  flex-direction: column;
+}
+.login-main h1 {
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.login-main input {
+  margin: 0.8rem 0;
+  min-width: 300px;
+  min-height: 40px;
+  border-radius: 2px;
+  background: black;
+  opacity: 1;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  padding: 0.3rem 0 0.3rem 1rem;
+  color: rgb(255, 255, 255);
+}
+.login-main .login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  opacity: 0.9;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: 1.2rem;
+}
+.login-main .login-button span {
+  font-size: 21px;
+}
+.login-main .login-button:hover {
+  opacity: 1;
+  box-shadow: 2px 2px 5px 2px rgb(110, 110, 110);
+}
+.login-main .login-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.2rem 0;
+}
+.login-main .login-text p {
+  font-weight: 400;
+  border-bottom: 1px solid rgb(91, 91, 91);
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.3rem;
+  cursor: pointer;
+  opacity: 0.9;
+  color: black;
+}
+.login-main .login-text p:hover {
+  opacity: 1;
+}
+
+.login-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  height: fit-content;
+}
+.login-loader > div {
+  width: 15px;
+  height: 15px;
+  margin: 2px;
+  border-radius: 50%;
+  background-color: rgb(132, 132, 132);
+}
+.login-loader div:nth-child(1) {
+  animation: loader 1s ease infinite;
+  animation-delay: 0s;
+}
+.login-loader div:nth-child(2) {
+  animation: loader 1s ease infinite;
+  animation-delay: 0.1s;
+}
+.login-loader div:nth-child(3) {
+  animation: loader 1s ease infinite;
+  animation-delay: 0.2s;
+}
+@keyframes loader {
+  0%, 100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+.signup-main {
+  display: flex;
+  flex-direction: column;
+}
+.signup-main h1 {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+.signup-main input {
+  margin: 0.6rem 0;
+  min-width: 300px;
+  min-height: 40px;
+  border-radius: 2px;
+  background: black;
+  opacity: 0.7;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  padding: 0.3rem 0 0.3rem 1rem;
+  color: white;
+}
+.signup-main .signup-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  border-radius: 2px;
+  opacity: 0.9;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.signup-main .signup-button span {
+  font-size: 21px;
+}
+.signup-main .signup-button:hover {
+  opacity: 1;
+  box-shadow: 2px 2px 5px 2px rgb(110, 110, 110);
+}

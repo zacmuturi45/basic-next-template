@@ -76,3 +76,278 @@
     font-family: 'Kumbh';
     src: url('../fonts/Kumbh/KumbhSans-Regular.ttf');
 }
+
+body {
+    background: white;
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-main {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(194, 194, 194);
+    border: 1px solid gray;
+
+    .nav-container {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+
+        h4 {
+            font-size: 45px;
+        }
+
+        .logindiv {
+            display: flex;
+            align-items: center;
+            p {
+                font-size: 1.5rem;
+                color: black;
+                margin-right: 1.5rem;
+            }
+            button {
+                width: 150px;
+                height: 45px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.hero-main {
+    height: 100vh;
+    .hero-container {
+        height: 100%;
+        .hos {
+            width: 100%;
+            height: 100%;
+        }
+        .butt {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            button {
+                height: 2.5rem;
+                width: 150px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+.authcard-main {
+    // border: 2px solid blue;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+    gap: 12%;
+
+    >div {
+        // border: 2px solid red;
+        height: fit-content;
+        max-width: 400px;
+        padding: .5rem;
+    }
+
+    .authcard-container {
+        width: 500px;
+        height: 600px;
+        .hosi {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.login-main {
+    display: flex;
+    flex-direction: column;
+    // border: 2px solid red;
+    h1 {
+        font-weight: 500;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    input {
+        margin: .8rem 0;
+        min-width: 300px;
+        min-height: 40px;
+        border-radius: 2px;
+        background: black;
+        opacity: 1;
+        outline: none;
+        border: none;
+        font-size: 1.2rem;
+        letter-spacing: .5px;
+        padding: .3rem 0 .3rem 1rem;
+        color: rgb(255, 255, 255);
+    }
+    .login-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        color: black;
+        padding: 1rem;
+        margin-top: 1.5rem;
+        opacity: 0.9;
+        cursor: pointer;
+        border-radius: 2px;
+        font-size: 1.2rem;
+        span {
+            font-size: 21px;
+        }
+        &:hover {
+            opacity: 1;
+            box-shadow: 2px 2px 5px 2px rgb(110, 110, 110);
+        }
+    }
+    .login-text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.2rem 0;
+        p {
+            font-weight: 400;
+            border-bottom: 1px solid rgb(91, 91, 91);
+            font-size: .9rem;
+            letter-spacing: .5px;
+            margin-bottom: .3rem;
+            cursor: pointer;
+            opacity: 0.9;
+            color: black;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+    .login-error {
+        color: rgb(189, 63, 63);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .5rem;
+    }
+}
+
+.verify {
+    padding: 4rem 0;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    .verify-div {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: rgb(141, 141, 141);
+        h1 {
+            margin: 1rem 0;
+            font-size: 55px;
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 5px;
+        }
+        p {
+            max-width: 600px;
+            text-align: center;
+            margin: 1rem 0;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.login-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: fit-content;
+    > div {
+        width: 15px;
+        height: 15px;
+        margin: 2px;
+        border-radius: 50%;
+        background-color: rgb(132, 132, 132);
+    }
+    div:nth-child(1) {
+        animation: loader 1s ease infinite;
+        animation-delay: 0s;
+    }
+    div:nth-child(2) {
+        animation: loader 1s ease infinite;
+        animation-delay: 0.1s;
+    }
+    div:nth-child(3) {
+        animation: loader 1s ease infinite;
+        animation-delay: 0.2s;
+    }
+    @keyframes loader {
+        0%, 100% {
+            transform: scale(0);
+        }
+        50% {
+            transform: scale(1);
+        }
+    }
+}
+
+.signup-main {
+    // border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    h1 {
+        font-weight: 500;
+        margin-bottom: .5rem;
+        font-size: 2.5rem;
+    }
+    input {
+        margin: .6rem 0;
+        min-width: 300px;
+        min-height: 40px;
+        border-radius: 2px;
+        background: black;
+        opacity: 0.7;
+        outline: none;
+        border: none;
+        font-size: 1.2rem;
+        letter-spacing: .5px;
+        padding: .3rem 0 .3rem 1rem;
+        color: white;
+    }
+    .signup-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        color: black;
+        padding: 1rem;
+        margin-top: 1.5rem;
+        border-radius: 2px;
+        opacity: 0.9;
+        font-size: 1.2rem;
+        cursor: pointer;
+        span {
+            font-size: 21px;
+        }
+        &:hover {
+            opacity: 1;
+            box-shadow: 2px 2px 5px 2px rgb(110, 110, 110);
+        }
+    }
+    .signup-error {
+        color: rgb(189, 63, 63);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .5rem;
+    }
+}
